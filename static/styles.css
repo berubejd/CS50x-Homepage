@@ -197,7 +197,9 @@ main {
 }
 
 .rld-image, .tt-image {
-    margin: 1rem 10px 2rem;
+    max-width: 100%;
+    height: auto;
+    margin: 1rem 0 2rem;
     border: 1px solid black;
 }
 
