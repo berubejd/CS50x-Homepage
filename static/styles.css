@@ -1,0 +1,241 @@
+:root {
+    --black: #0B0C10;
+    --grey: #1F2833;
+    --tan: #C5C6C7;
+    --light-blue: #66FCF1;
+    --dark-blue: #45A29E;
+    --white: #FFFFFF;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--tan);
+    text-align: center;
+    background-color: var(--grey);
+}
+
+.main-body {
+    background-image: url('christopher-farrugia-2yQtqBqzDRo-unsplash.jpg');
+    background-color: #010101;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+a {
+    color: var(--light-blue);
+}
+
+a:visited {
+    color: var(--light-blue);
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    padding: 0px 2vw;
+    z-index: 2;
+}
+
+nav .dropdown-menu {
+    background:transparent;
+}
+
+nav .dropdown-menu a {
+    color: var(--light-blue);
+}
+
+nav a:hover {
+    color: var(--light-blue);
+    transform: scale(1.1);
+}
+
+nav i.fas {
+    margin-right: .4vw;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+#welcome-section {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#witty-catchphrase {
+    min-height: 60vh;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+#witty-catchphrase h1 {
+    font-size: 8vw;
+    font-weight: bolder;
+    text-shadow: 5px 10px 5px rgba(0,0,0,1);
+    vertical-align: middle;
+    color: var(--light-blue);
+}
+
+#witty-catchphrase h2, #game-heading h2 {
+    font-size: 2.5vw;
+    text-shadow: 5px 10px 5px rgba(0,0,0,1);
+}
+
+#witty-catchphrase h4, #game-heading h4 {
+    font-size: 1.75vw;
+    text-shadow: 5px 10px 5px rgba(0,0,0,1);
+    color: var(--light-blue);
+}
+
+.blink {
+    vertical-align: text-bottom;
+    animation: blinking 1s infinite;
+}
+
+#projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-items: center;
+    min-height: 20vh;
+    padding: 1vh;
+}
+
+#project-title {
+    color: var(--grey);
+    background-color: var(--dark-blue);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.project-tile {
+    height: 250px;
+    width: 250px;
+    min-width: 250px;
+    border: 1px solid grey;
+    box-shadow: 5px 10px 15px 5px rgba(0,0,0,0.8);
+    margin: 2vw;
+}
+
+.project-tile a:hover {
+    color: var(--light-blue);
+}
+
+.overlay-image {
+    position: relative;
+    width: 100%;
+}
+
+.overlay-image .image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay-image .text {
+    font-size: 24px;
+    text-shadow: 2px 2px 2px #000;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+}
+
+.overlay-image .hover {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+}
+
+.overlay-image .hover {
+    background-color: rgba(0,0,0,0.6);
+}
+
+#game-heading {
+    margin: 50px;
+}
+
+.game-image {
+    margin: 1rem 10px 2rem;
+    width: 50%;
+    border: 1px solid black;
+}
+
+.rld-image, .tt-image {
+    margin: 1rem 10px 2rem;
+    border: 1px solid black;
+}
+
+.godot-image {
+    margin: 10px;
+    width: 25%;
+}
+
+.normal-text {
+    text-align: left;
+}
+
+#game-source-link {
+    font-size: 1.75vw;
+    margin: 50px 0;
+}
+
+@media (max-width: 550px) {
+    #witty-catchphrase h2, #game-heading h2 {
+        font-size: 12vw;
+    }
+    
+    #witty-catchphrase h4, #game-heading h4, #game-source-link {
+        font-size: 6vw;
+    }
+
+    .game-image, .godot-image {
+        width: 100%;
+        margin: 1rem 0 2rem;
+    }
+}
+
+@keyframes blinking {
+    0%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+    }
+}

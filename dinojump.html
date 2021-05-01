@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dino Jump - Hobby Game Development</title>
+    <meta name="description" content="CS50x Week 8 Homepage, Jeffrey Berube">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap and custom stylesheets-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link href="static/styles.css" rel="stylesheet">
+
+    <!-- Bootstrap JS Includes-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ab31ce7e18.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header id="header" class="col-md-12">
+            <nav class="navbar navbar-expand-lg w-100">
+                <a class="navbar-brand" href="index.html">Hobby Game Dev</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ml-auto">
+                        <a class="nav-item nav-link active" href="index.html">
+                            <i class="fas fa-home"></i>Home
+                        </a>
+                        <div class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-Games" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-cogs"></i>Games
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink-Games">
+                                <a class="dropdown-item" href="tamerstale.html">
+                                    <i class="fas fa-cogs"></i>Tamer's Tale
+                                </a>
+                                <a class="dropdown-item" href="something.html">
+                                    <i class="fas fa-cogs"></i>Something Something
+                                </a>
+                                <a class="dropdown-item active" href="dinojump.html">
+                                    <i class="fas fa-cogs"></i>Dino Jump
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section id="game-heading">
+                <h2>Dino Jump</h2>
+                <h4>Godot Engine and GDScript</h4>
+            </section>
+            <section id="game-content">
+                <p>A tiny platformer in Godot 3.2</p>
+                <br>
+                <p class="normal-text">Dino Jump is a single level platformer built in <a
+                        href="https://godotengine.org/">Godot</a> and leveraging GDScript, a Python like language,
+                    developed to work within the engine. As I am not an artist or musician myself, all of the assets
+                    used to make this game come from the community of artists, many on <a
+                        href="https://itch.io/">Itch.io</a>, that make their assets available for free
+                    on the Internet.</p>
+                <img class="game-image" src="static/DinoJump.png" alt="Dino Jump Screenshot">
+                <p>Godot Engine and GSScript</p>
+                <p class="normal-text"><a href="https://godotengine.org/">Godot</a> is a 2D and 3D, cross-platform, free
+                    and open-source game engine released under the MIT license. It was initially developed by
+                    Argentinians Juan Linietsky and Ariel Manzur for several companies in Latin America prior to its
+                    public release. The development environment runs on multiple operating systems including Linux,
+                    BSDs, macOS, and Microsoft Windows. Godot can create games targeting PC, mobile, and web platforms.
+                </p>
+                <img class="float-right godot-image" src="static/godot.png" alt="Godot Logo">
+                <p class="normal-text"><a href="https://godotengine.org/">Godot</a> aims to offer a fully integrated
+                    game development environment. It allows developers to create a game, needing no other tools beyond
+                    those used for content creation (visual assets, music, etc.). The engine's architecture is built
+                    around the concept of a tree of "nodes". Nodes are organized inside of "scenes", which are reusable,
+                    instanceable, inheritable, and nestable groups of nodes. All game resources, including scripts and
+                    graphical assets, are saved as part of the computer's file system (rather than in a database). This
+                    storage solution is intended to facilitate collaboration between game development teams using
+                    software version control systems.</p>
+                <p class="normal-text">GDScript is a high-level, dynamically typed programming language used to create
+                    content. It uses a syntax similar to Python (blocks are indent-based and many keywords are similar).
+                    Its goal is to be optimized for and tightly integrated with the <a
+                        href="https://godotengine.org/">Godot Engine</a>,
+                    allowing great flexibility for content creation and integration.</p>
+                <p class="normal-text text-center">- Source <a
+                        href="https://en.wikipedia.org/wiki/Godot_(game_engine)">Wikipedia</a></p>
+            </section>
+            <section id="game-source-link">
+                <a href="https://github.com/berubejd/DinoJump">Get the source for this game on GitHub!</a>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>

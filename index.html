@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home - Hobby Game Development</title>
+    <meta name="description" content="CS50x Week 8 Homepage, Jeffrey Berube">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap and custom stylesheets-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link href="static/styles.css" rel="stylesheet">
+
+    <!-- Bootstrap JS Includes-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ab31ce7e18.js" crossorigin="anonymous"></script>
+
+    <!-- Custom JS -->
+    <script src="js/custom.js"></script>
+</head>
+
+<body class="main-body">
+    <div class="container">
+        <header id="header" class="col-md-12">
+            <nav class="navbar navbar-expand-lg w-100">
+                <a class="navbar-brand" href="index.html">Hobby Game Dev</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ml-auto">
+                        <a class="nav-item nav-link active" href="index.html">
+                            <i class="fas fa-home"></i>Home
+                        </a>
+                        <div class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-Games" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-cogs"></i>Games
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink-Games">
+                                <a class="dropdown-item" href="tamerstale.html">
+                                    <i class="fas fa-cogs"></i>Tamer's Tale
+                                </a>
+                                <a class="dropdown-item" href="something.html">
+                                    <i class="fas fa-cogs"></i>Something Something
+                                </a>
+                                <a class="dropdown-item" href="dinojump.html">
+                                    <i class="fas fa-cogs"></i>Dino Jump
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section id="welcome-section">
+                <section id="witty-catchphrase">
+                    <h1>CS50x (2021)<span class="blink"> _</span></h1>
+                    <h2>Hobby Game Development</h2>
+                    <h4>- Jeffrey Berube -</h4>
+                </section>
+                <section id="projects">
+                    <section class="project-tile">
+                        <div class="overlay-image">
+                            <a href="tamerstale.html">
+                                <img class="image" src="static/TamersTale-Tile.png" alt="Tamer's Tale Image" />
+                                <div class="hover">
+                                    <div class="text">
+                                        Tamer's Tale
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </section>
+                    <section class="project-tile">
+                        <div class="overlay-image">
+                            <a href="something.html">
+                                <img class="image" src="static/SomethingSomething-Tile.png"
+                                    alt="Something Something Image" />
+                                <div class="hover">
+                                    <div class="text">
+                                        Something Something
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </section>
+                    <section class="project-tile">
+                        <div class="overlay-image">
+                            <a href="dinojump.html">
+                                <img class="image" src="static/DinoJump-Tile.png" alt="Dino Jump Image" />
+                                <div class="hover">
+                                    <div class="text">
+                                        Dino Jump
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </section>
+                </section>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
